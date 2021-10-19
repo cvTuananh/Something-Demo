@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body class="scrollbar scrollbar-secondary">
+    <!-- As a link -->
+    <aside id="Menu">
+        <img src="./img/topmusic.png" width="60vh">
+        <p>Top Music</p>
+        <ul class="menuDK">
+            <a href="#">
+                <li><i class="bi bi-file-music"></i>Cá Nhân</li>
+            </a>
+            <a href="#">
+                <li><i class="bi bi-vinyl"></i>Khám Phá</li>
+            </a>
+            <a href="#">
+                <li><i class="bi bi-graph-up-arrow"></i>BXH-LEAKED</li>
+            </a>
+            <a href="#">
+                <li><i class="bi bi-broadcast"></i>Radio</li>
+            </a>
+            <a href="#">
+                <li><i class="bi bi-newspaper"></i>Theo Dõi</li>
+            </a>
+            <a href="#">
+                <li><i class="bi bi-music-note"></i>Nhạc Mới</li>
+            </a>
+            <a href="#">
+                <li><i class="bi bi-columns-gap"></i>Thể Loại</li>
+            </a>
+            <a href="#">
+                <li><i class="bi bi-stars"></i>Top 100</li>
+            </a>
+            <a href="#">
+                <li><i class="bi bi-film"></i>MV Mới</li>
+            </a>
+        </ul>
+        <ul class="menuMB">
+            <li><i class="bi bi-file-music"></i></li>
+            <li><i class="bi bi-vinyl"></i></li>
+            <li><i class="bi bi-graph-up-arrow"></i></li>
+            <li><i class="bi bi-broadcast"></i></li>
+            <li><i class="bi bi-newspaper"></i></li>
+            <li><i class="bi bi-music-note"></i></li>
+            <li><i class="bi bi-columns-gap"></i></li>
+            <li><i class="bi bi-stars"></i></li>
+            <li><i class="bi bi-film"></i></li>
+        </ul>
+    </aside>
+    <main data-spy="scroll" data-target=".navbar" data-offset="50" class="scrollbar scrollbar-secondary">
+        <nav id="navbar-example2" class="navbar px-1">
+            <nav class="navbar ">
+                <div class="container-fluid">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <div id="control">
+                <button type="button" class="btn"><i class="bi bi-person-circle"><p>Đăng Nhập</p></i></a></button>
+                <button type="button" class="btn"><a href="#"><i class="bi bi-arrow-up-square"><p>Đăng Nhạc</p></i></a></button>
+                <button type="button" class="btn"><a href="#"><i class="bi bi-gear-fill"><p>Cài Đặt</p></i></a></button>
+            </div>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">Nhạc Việt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">US-UK</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Khác</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#scrollspyHeading3">Nhạc Trend</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading4">Us-Uk</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/20190624081508-ce80.jpg" class="d-block w-100" alt="..." height="600px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/844062_4.png" class="d-block w-100" alt="..." height="600px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/loi-bai-hat-cau-hen-cau-the-700.jpg" class="d-block w-100" alt="..." height="600px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/cover-fb-copy(1).jpg" class="d-block w-100" alt="..." height="600px">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h4 id="scrollspyHeading1">Nhạc Nghe Một Lần Là Nghiện</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/trend.jpg" class="card-img-top" alt="...">
+                            <i class="bi bi-play-circle"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Nhạc Rap</h5>
+                                <p class="card-text">Tuyển tập các bài hát Rap với nền Beat cực cháy, để khởi đầu cho một ngày đầy năng lượng</p>
+                                <a href="#" class="btn btn-primary">Phát Nhạc</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/nhacxuan.jpeg" class="card-img-top" alt="..." height="358px">
+                            <i class="bi bi-play-circle"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Nhạc Xuân 2022</h5>
+                                <p class="card-text">Nhạc Xuân Tuyển Chọn Cực Hay Của Hương Tràm, mang lại cảm giác xuân đang về</p>
+                                <a href="#" class="btn btn-primary">Phát Nhạc</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/Rapr-R&B.jpg" class="card-img-top" alt="..." height="358px">
+                            <i class="bi bi-play-circle"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Nhạc Hot Tháng 10</h5>
+                                <p class="card-text">Tuyển tập các bài hát cực hay làm mưa làm gió trên thị trường bảng xếp hạng Việt Nam</p>
+                                <a href="#" class="btn btn-primary">Phát Nhạc</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/blackpink.jpeg" class="card-img-top" alt="..." height="358px">
+                            <i class="bi bi-play-circle"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Nhạc Hàn Quốc</h5>
+                                <p class="card-text">Tuyển chọn những bản nhạc của các ca sỹ nỗi tiếng , nhóm nhạc BlackPink, BTS trên thị trường</p>
+                                <a href="#" class="btn btn-primary">Phát Nhạc</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 id="scrollspyHeading2">Nhạc US-UK</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/mini_magick20171005-3608-4i4t5yk.jpg" class="card-img-top" alt="..." height="356px">
+                            <i class="bi bi-play-circle"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Nhạc Rap</h5>
+                                <p class="card-text">Tuyển tập các bài hát Rap với nền Beat cực cháy, để khởi đầu cho một ngày đầy năng lượng</p>
+                                <a href="#" class="btn btn-primary">Phát Nhạc</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/71u6S+X9-3L._AC_SX466_.jpg" class="card-img-top" alt="..." height="358px">
+                            <i class="bi bi-play-circle"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Nhạc Xuân 2022</h5>
+                                <p class="card-text">Nhạc Xuân Tuyển Chọn Cực Hay Của Hương Tràm, mang lại cảm giác xuân đang về</p>
+                                <a href="#" class="btn btn-primary">Phát Nhạc</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/0022489445_10.jpg" class="card-img-top" alt="..." height="358px">
+                            <i class="bi bi-play-circle"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Nhạc Hot Tháng 10</h5>
+                                <p class="card-text">Tuyển tập các bài hát cực hay làm mưa làm gió trên thị trường bảng xếp hạng Việt Nam</p>
+                                <a href="#" class="btn btn-primary">Phát Nhạc</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/51QW+cwdJzL._rock_.jpg" class="card-img-top" alt="..." height="358px">
+                            <i class="bi bi-play-circle"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Nhạc Hàn Quốc</h5>
+                                <p class="card-text">Tuyển chọn những bản nhạc của các ca sỹ nỗi tiếng , nhóm nhạc BlackPink, BTS trên thị trường</p>
+                                <a href="#" class="btn btn-primary">Phát Nhạc</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 id="scrollspyHeading3">Chart-Level</h4>
+            <div class="chart-lv">
+                <div class="chart">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">45%</div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success"><img src="./img/number-1.png" width="30" height="24"> Xin Anh đừng Nhất Máy- Bray ft Sara</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info"><img src="./img/number-2.png" width="30" height="24"> Có Chắc yêu là đây - Sơn Tùng MTP</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning"><img src="./img/number-3.png" width="30" height="24"> Em sai hay anh sai - Bảo Anh</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger"><img src="./img/number-four.png" width="30" height="24"> Sóng gió - Jack</a>
+                </div>
+            </div>
+            <h4 id="scrollspyHeading4">MV Mới Phát Hành</h4>
+            <iframe class="videos" width="700" height="315" src="https://www.youtube.com/embed/-rKxy9mdpLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="videos" width="700" height="315" src="https://www.youtube.com/embed/xypzmu5mMPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4 id="scrollspyHeading5">Đối Tác - Nhà Tài Trợ</h4>
+            <div class="parent">
+                <img src="./img/hbo_max_followup_00.jpg" class="img-thumbnail" alt="..." width="400px">
+                <img src="./img/youtube-google-premium-musica.jpg" class="img-thumbnail" alt="..." width="300px" height="100px">
+                <img src="./img/thumbnail_zma.png " class="img-thumbnail " alt="... " width="330px">
+                <img src="./img/mma-2019-winners.jpeg " class="img-thumbnail " alt="... " width="350px">
+            </div>
+        </div>
+    </main>
+
+    <div id="nav-play">
+        <ul class="nav nav-tabs nav-pills" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Đang Phát</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Đã Phát</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <ul>
+                    <li>Trời Dấu Anh Đi - Amme ft Viruss</li>
+                    <li>Muộn Rồi Sao Còn - Sơn Tùng MTP</li>
+                    <li>Love Yourself - Jubtinbier</li>
+                    <li>Cơn Mưa Ngang Qua - Sơn Tùng MTP</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <ul>
+                    <li>Ice Heart - Sol7</li>
+                    <li>1 2 3 4 - Chi Dân</li>
+                    <li>Thằng Điên - Justate</li>
+                    <li>Mặt Trời Của EM - Phương Ly</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="Playings">
+        <div class="disc">
+            <img src="./img/trend.jpg" alt="">
+        </div>
+
+        <div class="tile">
+            <h6>Mùa Đông Không Lạnh</h6>
+            <p>Hiền Hồ</p>
+        </div>
+        <div class="progressbar">
+            <div class="icon-control">
+                <i class="bi bi-shuffle"></i>
+                <i class="bi bi-skip-backward"></i>
+                <i class="bi bi-play-circle"></i>
+                <i class="bi bi-skip-forward"></i>
+                <i class="bi bi-volume-mute"></i>
+            </div>
+            <p class="start">00:00</p>
+            <p class="end">00:00</p>
+            <div class="progress" style="height: 1px;">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+</body>
+
+</html>
